@@ -1,0 +1,20 @@
+# general rule for shifted vs truncated
+shifted
+# general rule for tailcorrections
+no
+# number of defined interactions
+10
+# type interaction
+A0          LENNARD_JONES     0.22     0.28
+A1          LENNARD_JONES     0.03     0.84
+A2          LENNARD_JONES     0.88     0.84
+A3          LENNARD_JONES     0.16     0.75
+A4          LENNARD_JONES     0.57     0.29
+A5          LENNARD_JONES     0.72     0.98
+A6          LENNARD_JONES     0.87     0.93
+CH4_sp3      LENNARD_JONES          148.0          3.73
+O_co2       LENNARD_JONES          79.0          3.05
+C_co2       LENNARD_JONES          27.0          2.80
+N_n2        LENNARD_JONES          36.0          3.31
+# general mixing rule for Lennard-Jones
+Lorentz-Berthelot

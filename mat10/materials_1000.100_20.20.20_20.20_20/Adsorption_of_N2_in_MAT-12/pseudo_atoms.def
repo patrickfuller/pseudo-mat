@@ -1,0 +1,12 @@
+#number of pseudo atoms
+14
+#type          print    as     chem     oxidation     mass       charge     polarization     B-factor     radii    connectivity     anisotropic   anisotrop-type  tinker-type
+A0   yes   C   C   0   12.0   0.451100048561   0.0   0.0   1.0  1.00   0   0  absolute   0A1   yes   C   C   0   12.0   -0.204997908196   0.0   0.0   1.0  1.00   0   0  absolute   0A2   yes   C   C   0   12.0   0.393780412465   0.0   0.0   1.0  1.00   0   0  absolute   0A3   yes   C   C   0   12.0   -0.0811360940554   0.0   0.0   1.0  1.00   0   0  absolute   0A4   yes   C   C   0   12.0   -0.909378835045   0.0   0.0   1.0  1.00   0   0  absolute   0A5   yes   C   C   0   12.0   0.35063237627   0.0   0.0   1.0  1.00   0   0  absolute   0CH4-sp3       yes      C      C        0             16.04246   0.0        0.0              1.0          1.00     0                0             absolute        0
+CH3_sp3       yes      C      C        0             15.03452   0.0        0.0              1.0          1.00     0                0             absolute        0
+CH2_sp3       yes      C      C        0             14.02658   0.0        0.0              1.0          1.00     0                0             absolute        0
+CH_sp3        yes      C      C        0             13.01864   0.0        0.0              1.0          1.00     0                0             absolute        0
+C_sp3         yes      C      C        0             12.0       0.0        0.0              1.0          1.00     0                0             absolute        0
+C_co2         yes      C      C        0             12.0107    0.7        1.508            1.0          0.720    0                0             absolute        0
+O_co2         yes      O      O        0             15.9994   -0.35       0.9475           1.0          0.68     0                0             relative        0
+N_n2          yes      N      N        0             14.00674  -0.482      0.0              1.0          0.7      0                0             relative        0
+N_com         no       N      N        0             0.0        0.964      0.0              1.0          0.7      0                0             relative        0

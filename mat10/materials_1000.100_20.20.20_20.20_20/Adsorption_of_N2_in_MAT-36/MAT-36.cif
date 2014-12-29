@@ -1,0 +1,31 @@
+material36
+
+BOUNDARIES
+Number of particles: 100
+x-coordinate: 20
+y-coordinate: 20
+z-coordinate: 20
+Epsilon: 20
+Sigma: 20
+Charge: 20
+
+loop_
+_symmetry_equiv_pos_as_xyz
+  x,y,z
+_cell_length_a          20
+_cell_length_b          20
+_cell_length_c          20
+_cell_angle_alpha       90.0000
+_cell_angle_beta        90.0000
+_cell_angle_gamma       90.0000
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_charge
+#NET CHARGE: 0.0
+A0     1     17     3    -0.169253363868
+A1     1     15     1     0.00488475681026
+A2     4     8     1    -0.0954998274255
+A3     3     14     3     0.259868434483

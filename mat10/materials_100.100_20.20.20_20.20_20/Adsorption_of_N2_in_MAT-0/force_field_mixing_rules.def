@@ -1,0 +1,50 @@
+# general rule for shifted vs truncated
+shifted
+# general rule for tailcorrections
+no
+# number of defined interactions
+40
+# type interaction
+A0          LENNARD_JONES     0.52     0.31
+A1          LENNARD_JONES     0.83     0.13
+A2          LENNARD_JONES     0.7     0.25
+A3          LENNARD_JONES     0.76     0.79
+A4          LENNARD_JONES     0.37     0.22
+A5          LENNARD_JONES     0.26     0.21
+A6          LENNARD_JONES     0.18     0.73
+A7          LENNARD_JONES     0.42     0.99
+A8          LENNARD_JONES     0.1     0.18
+A9          LENNARD_JONES     0.62     0.13
+A10          LENNARD_JONES     0     0.25
+A11          LENNARD_JONES     0.31     0.72
+A12          LENNARD_JONES     0.52     0.41
+A13          LENNARD_JONES     0.89     0.79
+A14          LENNARD_JONES     0.85     0.34
+A15          LENNARD_JONES     0.04     0.91
+A16          LENNARD_JONES     0.31     0.79
+A17          LENNARD_JONES     0.35     0.33
+A18          LENNARD_JONES     0.33     0.06
+A19          LENNARD_JONES     0.3     0.19
+A20          LENNARD_JONES     0.04     0.25
+A21          LENNARD_JONES     0.78     0.24
+A22          LENNARD_JONES     0.63     0.76
+A23          LENNARD_JONES     0.67     0.11
+A24          LENNARD_JONES     0.57     0.23
+A25          LENNARD_JONES     0.45     0.67
+A26          LENNARD_JONES     0.42     0.55
+A27          LENNARD_JONES     0.97     0.02
+A28          LENNARD_JONES     0.4     0.73
+A29          LENNARD_JONES     0.44     0.74
+A30          LENNARD_JONES     0.3     0.7
+A31          LENNARD_JONES     0.93     0.39
+A32          LENNARD_JONES     0.81     0.43
+A33          LENNARD_JONES     0.76     0.26
+A34          LENNARD_JONES     0.74     0.79
+A35          LENNARD_JONES     0.08     0.87
+A36          LENNARD_JONES     0.42     0.84
+CH4_sp3      LENNARD_JONES          148.0          3.73
+O_co2       LENNARD_JONES          79.0          3.05
+C_co2       LENNARD_JONES          27.0          2.80
+N_n2        LENNARD_JONES          36.0          3.31
+# general mixing rule for Lennard-Jones
+Lorentz-Berthelot
