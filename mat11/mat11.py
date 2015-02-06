@@ -1,6 +1,6 @@
 from random import choice, random
 import os
-def mat10(N, ndenmax, gas, ndenp=0.01, xmax=20, xp=0.01, ymax=20, yp=0.01, zmax=20, zp=0.01, epmax=1, epp=0.01, sigmax=1, sigp=0.01, qmax=1, cycles=500, initcycles=100, printevery=100, unitcells=(2,2,2), temperature=298, pressure='1e5 2.5e5 5e5 1e6 2.5e6 5e6'):
+def mat11(N, ndenmax, gas, ndenp=0.01, xmax=20, xp=0.01, ymax=20, yp=0.01, zmax=20, zp=0.01, epmax=1, epp=0.01, sigmax=1, sigp=0.01, qmax=1, cycles=500, initcycles=100, printevery=100, unitcells=(2,2,2), temperature=298, pressure='1e5 2.5e5 5e5 1e6 2.5e6 5e6'):
     #
     #_max refers to the maximum upper booundary for a given paramter, minimum boundaries are zero, except  
     #in the case of charges where the minimum boundary is qmax * -1
@@ -63,7 +63,7 @@ def mat10(N, ndenmax, gas, ndenp=0.01, xmax=20, xp=0.01, ymax=20, yp=0.01, zmax=
     runshell_file.write('echo \"...\"\nwhile [ -f \"$(find ./ -name shell -type f)\" ];\ndo\n    cd -- \"$(find ./ -name shell -type f -printf \'%h\' -quit)\"\n    source shell\ndone\necho \"...done!\"')
     
     
-    numden_file = open(os.path.join(os.path.abspath(run_path), 'numden'), 'wb')
+    numden_file = open(os.path.join(os.path.abspath(run_path), 'numden'), 'a')
     runshell_file.close()
 
     for i in range(N + 1):
