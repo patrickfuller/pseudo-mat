@@ -221,7 +221,7 @@ zmax=50, zp=0.1, epmax=500.0, epp=0.1, sigmax=8.0, sigp=0.01, qmax=6.0):
         for i in range(100):
 
             atom_X_mixing = ('A' + str(i) + '          LENNARD_JONES     ' +
-				str(sig[i]) + '     ' + str(ep[i]) + '\n')
+				str(ep[i]) + '     ' + str(sig[i]) + '\n')
             mixing_rules.write(atom_X_mixing)
 
             atom_X_pseudo = ('A' + str(i) + '   yes   C   C   0   12.0   ' +
