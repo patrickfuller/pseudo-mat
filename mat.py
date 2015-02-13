@@ -1,10 +1,10 @@
 from random import choice, random
 import os
-import subprocess
 
 
 def mat13(N, ndenmax=0.08494, ndenp=0.001, xmax=50, xp=0.1, ymax=50, yp=0.1,
-          zmax=50, zp=0.1, epmax=500.0, epp=0.1, sigmax=8.0, sigp=0.01, qmax=6.0):
+          zmax=50, zp=0.1, epmax=500.0, epp=0.1, sigmax=8.0, sigp=0.01,
+          qmax=6.0):
 
     # max number density based on that of pure Iron
     # max unit cell dimensions based on PCN-777 cages size
@@ -108,17 +108,16 @@ def mat13(N, ndenmax=0.08494, ndenp=0.001, xmax=50, xp=0.1, ymax=50, yp=0.1,
                        '_atom_site_charge\n')
         cif_file.write(cif_heading)
 
-        mixing_heading = ('# general rule for shifted vs truncated\nshifted\n' +
-                          '# general rule for tailcorrections\nno\n' +
-                          # check these + XXX values
-                          '# number of defined interactions\n' + str(108) +
+        mixing_heading = ('# general rule for shifted vs truncated\nshifted\n'
+                          '# general rule for tailcorrections\nno\n'
+                          '# number of defined interactions\n108'
                           '\n# type interaction\n')
         mixing_rules.write(mixing_heading)
 
-        pseudo_heading = ('#number of pseudo atoms\n' + str(108) +
-                          '\n#type          print    as     chem     oxidation' +
-                          '     mass       charge     polarization     ' +
-                          'B-factor     radii    connectivity     anisotropic' +
+        pseudo_heading = ('#number of pseudo atoms\n108'
+                          '\n#type          print    as     chem     oxidation'
+                          '     mass       charge     polarization     '
+                          'B-factor     radii    connectivity     anisotropic'
                           '   anisotrop-type  tinker-type\n')
         pseudo_atoms.write(pseudo_heading)
 
@@ -192,7 +191,8 @@ def mat13(N, ndenmax=0.08494, ndenp=0.001, xmax=50, xp=0.1, ymax=50, yp=0.1,
 
         mat_charge = str(sum(q))
         cif_file.write('#NET CHARGE: ' + mat_charge + '\n')
-        mat_X_stats = (mat_name + '     ' + str(nden_) + '     ' + str(xdim_) + '     ' + str(ydim_) +
+        mat_X_stats = (mat_name + '     ' + str(nden_) + '     ' + str(xdim_) +
+                       '     ' + str(ydim_) +
                        '     ' + str(zdim_) + '     ' + str(n_) + '     ' +
                        str(sum(q)) + '\n')
         mat_stats.write(mat_X_stats)
@@ -204,19 +204,15 @@ def mat13(N, ndenmax=0.08494, ndenp=0.001, xmax=50, xp=0.1, ymax=50, yp=0.1,
             y = choice(range(int(ydim_ + 1)))
             z = choice(range(int(zdim_ + 1)))
             atomtype = choice(range(100))
-            #ep = choice(epdim)
-            #sig = choice(sigdim)
-            epval = ep[atomtype]
-            sigval = sig[atomtype]
             charge = q[atomtype]
             if charge < 0:
-                atom_X_cif = ('A' + str(atomtype) + '     ' + str(x) + '     ' +
-                              str(y) + '     ' + str(z) + '    ' +
+                atom_X_cif = ('A' + str(atomtype) + '     ' + str(x) + '     '
+                              + str(y) + '     ' + str(z) + '    ' +
                               str(charge) + '\n')
                 cif_file.write(atom_X_cif)
             if charge >= 0:
-                atom_X_cif = ('A' + str(atomtype) + '     ' + str(x) + '     ' +
-                              str(y) + '     ' + str(z) + '     ' +
+                atom_X_cif = ('A' + str(atomtype) + '     ' + str(x) + '     '
+                              + str(y) + '     ' + str(z) + '     ' +
                               str(charge) + '\n')
                 cif_file.write(atom_X_cif)
 
@@ -231,14 +227,14 @@ def mat13(N, ndenmax=0.08494, ndenp=0.001, xmax=50, xp=0.1, ymax=50, yp=0.1,
                              '0  absolute   0\n')
             pseudo_atoms.write(atom_X_pseudo)
 
-# SUPPORTED ADSORBATES
-# name         pseudo-atoms
-# N2       :   N_n2; N_com
-# CO2      :   C_co2; O_co2
-# methane  :   CH4_sp3
-# helium   :   He
-# hydrogen :   H_h2; H_com
-# H2       :   H_h2; H_com
+        # SUPPORTED ADSORBATES
+        # name         pseudo-atoms
+        # N2       :   N_n2; N_com
+        # CO2      :   C_co2; O_co2
+        # methane  :   CH4_sp3
+        # helium   :   He
+        # hydrogen :   H_h2; H_com
+        # H2       :   H_h2; H_com
 
         adsorbate_mixing = ('N_n2        LENNARD_JONES   36.0     3.31\n' +
                             'N_com       none\n' +
