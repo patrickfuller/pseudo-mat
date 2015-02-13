@@ -1,9 +1,0 @@
-source run
-cd Output/System_0
-grep 'Average loading absolute' $PATTERN * >> ~/RASPA-2.0-CF/mat6_output.txt
-grep 'WARNING' $PATTERN * >> ~/RASPA-2.0-CF/mat6_output.txt
-cd ..
-cd ..
-rm -rf Output
-rm shell
-cd ~/RASPA-2.0-CF

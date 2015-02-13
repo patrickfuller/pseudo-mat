@@ -1,7 +1,0 @@
-echo "..."
-while [ -f "$(find ./ -name shell -type f)" ];
-do
-    cd -- "$(find ./ -name shell -type f -printf '%h' -quit)"
-    source shell
-done
-echo "...done!"
